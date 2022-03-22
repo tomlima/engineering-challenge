@@ -30,9 +30,9 @@ Cada entrada é composta pelas seguintes chaves:
 
 ```sh
 {
-    id: 1 // Id único do cliente - {Int} ,
-    name: "Acme Co" // Nome do cliente {String},
-    benefits: [2,3,4] // Id`s de todos os benefícios ofertados pelo cliente {Array}
+    id: 1 #Id único do cliente - {Int} ,
+    name: "Acme Co" # Nome do cliente {String},
+    benefits: [2,3,4] # Id`s de todos os benefícios ofertados pelo cliente {Array}
 }
 ```
 
@@ -52,9 +52,9 @@ Cada entrada é composta pelas seguintes chaves:
     name: "Plano de Saúde NorteEuropa" // Nome do benefício {String},
     form: [
         {
-            name: "Cpf" // Nome do input que será adicionado ao formulário do benefício {String},
-            type: "number" // Tipo do input que será criado {String},
-            validator: "cpf" // Nome da função que será utilizada para validação deste mesmo campo {String}
+            name: "Cpf" # Nome do input que será adicionado ao formulário do benefício {String},
+            type: "number" # Tipo do input que será criado {String},
+            validator: "cpf" # Nome da função que será utilizada para validação deste mesmo campo {String}
         }
     ]
 }
