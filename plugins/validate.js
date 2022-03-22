@@ -6,7 +6,7 @@ export default ({ app }, inject) => {
     promises = []
     return new Promise((res, rej) => {
       const formInputs = form.getElementsByTagName('input')
-      formInputs.forEach(inputElement => {
+      Array.from(formInputs, inputElement => {
         createValidationPromises(inputElement)
       })
       Promise.all(promises).then(results => {
