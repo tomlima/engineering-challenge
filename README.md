@@ -48,8 +48,8 @@ Cada entrada é composta pelas seguintes chaves:
 
 ```sh
 {
-    id: 1 // Id único do benefício - {Int} ,
-    name: "Plano de Saúde NorteEuropa" // Nome do benefício {String},
+    id: 1 # Id único do benefício - {Int} ,
+    name: "Plano de Saúde NorteEuropa" # Nome do benefício {String},
     form: [
         {
             name: "Cpf" # Nome do input que será adicionado ao formulário do benefício {String},
