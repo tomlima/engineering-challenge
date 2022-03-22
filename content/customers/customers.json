@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Acme Co",
+    "benefits": [1, 3]
+  },
+  {
+    "id": 2,
+    "name": "Tio Patinhas Bank",
+    "benefits": [2, 3, 4]
+  }
+]

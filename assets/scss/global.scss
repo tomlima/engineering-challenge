@@ -1,0 +1,138 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Globals
+*/
+
+/*---------------
+1.0 - Globals
+---------------*/
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.507);
+  outline: 0;
+}
+
+.container {
+  margin: 50px 25px 50px 25px;
+  @media screen and (min-width: 920px) {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+  @media screen and (min-width: 920px) {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+a {
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: blue;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+form {
+  margin-top: 30px;
+  input {
+    overflow: auto;
+    margin-bottom: 30px;
+    &.has-error {
+      position: relative;
+      border: 2px solid tomato;
+    }
+  }
+}
+
+.card {
+  visibility: hidden;
+  padding: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 30px;
+  h2,
+  span {
+    display: block;
+    margin-bottom: 15px;
+  }
+  &.is-open {
+    visibility: initial;
+  }
+  &__wrapper {
+    margin: 30px 0;
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    i {
+      font-size: 1.5rem;
+      margin-right: 30px;
+      background-color: rgb(0, 47, 255);
+      color: #fff;
+      padding: 10px;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+  }
+}
